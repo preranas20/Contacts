@@ -97,7 +97,7 @@ public class CreateNewContact extends AppCompatActivity implements View.OnClickL
                     Contact contact = new Contact(textFirst, textLast, textCompany, textPhone, textEmail, textUrl, textAddress, textNickname, textFbUrl, textTwitterUrl, textSkype, textYoutube, date,photo );
                     contactList.add(contact);
                     Toast.makeText(this, "Contact Saved", Toast.LENGTH_LONG).show();
-                    Log.d("demo", "Contacts saved: "+contactList.toString());
+                    Log.d("demo", "Contacts saved throug new contact: "+contactList.toString());
                     //Intent intent = new Intent(CreateNewContact.this, Contacts.class);
                     //startActivity(intent);
                     finish();

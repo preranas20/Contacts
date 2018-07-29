@@ -20,6 +20,7 @@ import java.util.Locale;
 
 public class EditContactActvity extends AppCompatActivity implements View.OnClickListener {
     private static final int CAMERA_REQ=101;
+    private static final String CONTACTLIST_KEY = "contact list";
     private ImageButton image;
     private EditText first,last,company,phone,email,url,address,birthday,nickname,fbUrl,twitterUrl,skype,youtube;
     private String textFirst,textLast,textCompany,textPhone,textEmail,textUrl,textAddress,textBirthday,textNickname,textFbUrl,textTwitterUrl,textSkype,textYoutube;
@@ -129,8 +130,10 @@ public class EditContactActvity extends AppCompatActivity implements View.OnClic
                     contact.setPhoto(photo);
                     CreateNewContact.contactList.set(index,contact);
                     Toast.makeText(this, "Contact Saved", Toast.LENGTH_LONG).show();
-                    Log.d("demo", "Contacts saved: "+CreateNewContact.contactList.toString());
-
+                    Log.d("demo", "Contacts saved through edit: "+CreateNewContact.contactList.toString());
+                    Intent returnIntent = new Intent();
+                    returnIntent.putExtra(CONTACTLIST_KEY,CreateNewContact.contactList);
+                    setResult(Activity.RESULT_OK,returnIntent);
                     finish();
                 }
             }
