@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="btnCreateNew">Create New</string>
+    <string name="btnEditContact">Edit Contact</string>
+    <string name="btnDeleteContact">Delete Contact</string>
+    <string name="btnDisplayContact">Display Contact</string>
+    <string name="btnFinish">Finish</string>
+    <string name="activity_create__new">Create New Contact</string>
+    <string name="CreateNewContact">Create New Contact</string>
+    <string name="editFirst">First</string>
+    <string name="editLast">Last</string>
+    <string name="editCompany">Company</string>
+    <string name="editPhone">Phone</string>
+    <string name="editEmail">Email</string>
+    <string name="editURL">URL</string>
+    <string name="editAddress">Address</string>
+    <string name="editBirthday">Birthday</string>
+    <string name="editNickName">Nickname</string>
+    <string name="editfbUrl">Facebook Profile URL</string>
+    <string name="editTwitterUrl">Twitter Profile URL</string>
+    <string name="editSkype">Skype</string>
+    <string name="btnSave">SAVE</string>
+</resources>
